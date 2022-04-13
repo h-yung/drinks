@@ -14,3 +14,6 @@ Suggested pairings (other API).
 
 ## Cleanup
 Refactoring for simpler code and less repetition of query Selectors.
+
+## Demo
+https://h-yung.github.io/drinks/
