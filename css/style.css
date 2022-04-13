@@ -1,0 +1,249 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  /* background: rgb(223, 117, 247); */
+  background: rgb(151, 161, 247);
+}
+
+.wrapper {
+  display: flex;
+}
+
+body > section.wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+
+header.wrapper {
+  width: 100vw;
+  padding: 2rem 4rem;
+  justify-content: center;
+  align-items: baseline;
+  background: #fb2251;
+  
+
+  /* flex-direction: column; */
+}
+
+main.wrapper {
+  padding: 2rem 4rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.content {
+  flex-shrink: 2;
+  padding: 4rem 2rem;
+}
+
+.imgContainer {
+  padding: 0 2rem 0 0.5rem;
+  min-width: 30%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 1rem 1rem 0;
+  transition: color 0.5s ease-in-out 0.2s;
+
+}
+
+h1:hover{
+  color: rgba(255, 255, 255, 0.836);
+}
+
+h2 {
+  color: #490f26;
+  font: italic bold 1.5em/1.5em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+span {
+  margin-bottom: 1em;
+  color:#fb2251;
+}
+
+.content ul.wrapper {
+  justify-content: flex-start;
+}
+
+.content ul li {
+  margin: 0 0.5em 2em 0;
+}
+
+.content h2{
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  /* background: #eaa3bc; */
+  border-bottom: 0.5rem solid #fb2251;
+  padding: 1rem;
+}
+
+.content h3 {
+  margin: 1em 0;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2e2c17;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+}
+
+
+img{
+  display: block;
+  /* margin: 0 auto; */
+  max-height: 300px;
+  box-shadow: 1em 1em #fb2251;
+  transition: all 0.5s ease-out 0.1s;
+
+}
+
+img:hover {
+  border: 3px solid white;
+  
+}
+
+input {
+  padding: 0.6em 1em;
+  margin-right: 0.5rem;
+  border: none;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  width: 15rem;
+}
+
+
+
+input:focus {
+  border: 1px solid lightsalmon;
+}
+
+
+.cta {
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  /* background: rgb(234, 68, 56); */
+  background: #fb2251;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  box-shadow: 0.2em 0.2em rgb(37, 37, 37);
+  transition: all 0.2s linear 0.1s;
+}
+
+.cta:hover{
+  box-shadow: 0.2em 0.2em 0.5em rgba(37, 37, 37, 0.62);
+  /* background: #ffcfd5; */
+  color: white;
+  border-color: white;
+}
+
+.cta:active {
+  box-shadow: none;
+  border-color: white;
+  color: white;
+  background: rgb(78, 60, 220);
+}
+
+
+.terc.cta {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  width: 4em;
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.hidden {
+  display: none
+}
+
+@media screen and (max-width:600px){
+
+  body {
+    padding: 2rem;
+  }
+
+  main.wrapper {
+    align-items: center;
+  }
+
+  .imgContainer {
+    order:1;
+    padding: 2rem;
+    
+  }
+  .content {
+    order:2;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  #name + .wrapper {
+    justify-content: center;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  h1,
+  input,
+  button {
+    font-size: larger;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .content h2 {
+    margin-top: 1rem;
+  }
+}
