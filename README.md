@@ -1,5 +1,8 @@
 # drinks
-Searchable drink recipe list (alcoholic and nonalcoholic) using the public CocktailDB API.
+Searchable drink recipe list (alcoholic and nonalcoholic) using the public CocktailDB API. Disclaimer here that a majority of recipes are not recommended for those below legal drinking age. These are marked by a special cocktail glass icon.
+
+## [Demo](https://h-yung.github.io/drinks/)
+![drink recipe demo](https://i.postimg.cc/J08VwzK2/drinks-demo.jpg)
 
 ## Additional features
 Made the display rotate through a "carousel" sequentially of the search results from user input. 
@@ -13,5 +16,3 @@ Practically speaking it would be functionally more useful to have it either turn
 5. Suggested pairings (other API).
 6. (Ongoing) Refactoring to streamline.
 
-## Demo
-https://h-yung.github.io/drinks/
