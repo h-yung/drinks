@@ -9,11 +9,11 @@ Conveniently searchable and lightweight drink recipe recommendations (alcoholic 
 **Tech used:** HTML, CSS, JavaScript.
 
 ## Additional features
-The display rotates through a sequence of search results from user input. 
-Practically speaking it would be functionally more useful to have it either turn out one random choice from the search results, or sequentially allow the user to progress through them and see the number of results or names from the list.
+The display rotates on timeout through a sequence of search results from user input. 
+It would be functionally more useful to have it either turn out one random choice from the search results, or sequentially allow the user to progress through them and see the number of results or names from the list.
 
 ## Optimizations
-1. Changing rotation to carousel with sliding/offset transitions.
+1. Changing timed rotation to carousel that advances with user input.
 2. Language translation options for recipes (DE, IT, ES) as well as option to revert "back".
 3. Some corrective processing of ingredient list and grammar - would need to rinse data through this step.
 4. Allow user to choose to see video if it exists for a drink (though few of the drinks have this).
