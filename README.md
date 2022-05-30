@@ -13,7 +13,7 @@ The display rotates on timeout through a sequence of search results from user in
 It would be functionally more useful to have it either turn out one random choice from the search results, or sequentially allow the user to progress through them and see the number of results or names from the list.
 
 ## Optimizations
-1. Changing timed rotation to carousel that advances with user input.
+1. Change the timed rotation to carousel that advances with user input - actually would be easier technically than the current setup with autorotate. This could be more of a 'on user input, pause and allow browsing forward and backward in list results' change for next version.
 2. Language translation options for recipes (DE, IT, ES) as well as option to revert "back".
 3. Some corrective processing of ingredient list and grammar - would need to rinse data through this step.
 4. Allow user to choose to see video if it exists for a drink (though few of the drinks have this).
@@ -24,7 +24,7 @@ It would be functionally more useful to have it either turn out one random choic
 ## Lessons learned
 It's clear I get carried away with CSS /styling even a very simple website...
 
-Asynchronous API calls with timeouts can wreak havoc on search result presentation, so it may be useful to add a storage layer for the results of each call (temporary objects in an array) that will be used to provide the next search result. This additional layer can then be cleared at the point of a new call, dumping the remaining search results of the previous call.
+Asynchronous API calls with timeouts can wreak havoc on search result presentation. Isolate the timeout or promise so that the remaining results of the earlier calls do not keep appearing in the current call. (Thanks [Arquimidio](https://github.com/Arquimidio)!)
 
 ## Related projects
 The more practical approach to this recipe recommendation (as noted above) was applied to a [business marketing website](https://unplanned-diversion-59th-st.netlify.app/).
